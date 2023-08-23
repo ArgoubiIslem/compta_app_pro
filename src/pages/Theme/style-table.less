@@ -1,0 +1,133 @@
+@import '~antd/lib/style/themes/default.less';
+
+@media only screen and (max-width: 1167px) {
+  .ant-table tfoot td:nth-child(1) {
+    display: none;
+  }
+
+  .ant-table table,
+  .ant-table title,
+  .ant-table thead,
+  .ant-table tbody,
+  .ant-table tfoot,
+  .ant-table th,
+  .ant-table td,
+  .ant-table tr {
+    display: block;
+  }
+
+  .ant-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .ant-table tr {
+    border: 1px solid #ccc;
+  }
+
+  .ant-table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left;
+  }
+
+  .ant-table td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .ant-table td span {
+    white-space: normal;
+  }
+
+  .ant-table td span:before {
+    content: attr(data-title);
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+}
+
+.positionTotal {
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+
+  .positionButton {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+
+  .ant-space-item {
+    margin-bottom: 5px;
+  }
+
+  .ant-drawer-content-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .inputlibelle {
+    width: 260px;
+  }
+
+  .inputTitle {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .inputlibelle {
+
+    width: 920px;
+  }
+
+  .inputTitle {
+    border: 0px;
+    width: 500px;
+  }
+
+  .ant-drawer-content-wrapper {
+    margin-top: 48px;
+    padding-left: 25%;
+    padding-right:25%;
+    display: block;
+    padding-bottom: 96px;
+
+  }
+
+  .styleforms {
+    padding-top: 60px;
+    padding-left: 120px;
+    align-items: center;
+  }
+}
+
+.alertInput {
+  margin-bottom: 30px
+}
+.styleLibelle{
+  font-weight: 700;
+}
+.libel{
+  font-weight: 350;
+}
+
